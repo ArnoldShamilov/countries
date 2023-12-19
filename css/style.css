@@ -123,6 +123,8 @@ border-radius: 5px;
     font-weight: 800;
     line-height: 26p;
     margin-bottom: 16px;
+    padding-top: 24px;
+    padding-left: 24px;
 }
 
 .flags-news-reaper {
@@ -131,7 +133,7 @@ border-radius: 5px;
     flex-grow: 1;
     background-color: #FFF;
     margin-bottom: 67px;
-    margin-right: 0px;
+   margin-right: 75px;
 }
 
 .flags-news-img {
@@ -139,9 +141,17 @@ border-radius: 5px;
     width: 100%;
     height: 160px;
 }
-
-.flags-news-reaper:not(:last-child) {
-    margin-right: 75px;
+.flags-reapper-ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   flex-wrap: wrap;
+}
+.flags-reaper-div{
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-bottom: 46px;
 }
 
 .flags-child-reaper {
@@ -158,6 +168,8 @@ border-radius: 5px;
     font-style: normal;
     font-weight: 300;
     line-height: 16px;
+    padding-left: 24px;
+    margin-bottom: 8px;
 }
 
 .flags-news-child-text:not(:last-child) {
@@ -260,6 +272,12 @@ background: #FFF;
     width: 100%;
     max-width: 598px;
 }
+
+.flags-news-reaper:nth-child(4n) {
+  margin-right: 0;
+}
+
+
 @media only screen and (max-width:400px) {
     .header {
     padding-top: 30px;
