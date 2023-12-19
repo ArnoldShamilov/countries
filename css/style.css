@@ -152,6 +152,7 @@ border-radius: 5px;
     padding: 0;
     margin: 0;
    flex-wrap: wrap;
+   justify-content: center;
 }
 .flags-reaper-div{
     padding-top: 24px;
@@ -282,6 +283,12 @@ background: #FFF;
 
 
 @media only screen and (max-width:400px) {
+    .container {
+        max-width: 343px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .header {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -322,17 +329,63 @@ background: #FFF;
     }
     .flags-news-reaper:not(:last-child){
         margin-bottom: 40px;
+        margin-right: 0px;
     }
     .flags-bottom-reaper{
         flex-direction: column;
         display: flex;
         align-items:center;
     }
-    .flags-news-reaper{
-        margin-right: auto;
-        margin-left: auto;
+    .state-img{
+        width: 320px;
+height: 275px;  
+margin-bottom: 27px;
     }
-    .flags-news-reaper:not(:last-child){
+    .wrapper-reaper{
+        width: 100%;
+        display: block;
+    }
+    .child-reaper{
+        display: block;
+    }
+    .state-text-reaper{
+        margin-bottom: 32px;
+    }
+    .state-wrap-text{
+        color: #111517;
+font-family: Nunito Sans;
+font-size: 22px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+    }
+    .state-text{
+        color: #111517;
+font-family: Nunito Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 32px;
+    }
+    .state-bottom-reaper{
+        display: block;
+        margin-bottom: 100px;
+    }
+    .state-bottom-text{
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+    .state-bottom-text-reaper{
+        display: flex;
+    }
+    .state-button{
+        font-size: 12px;
+    }
+    .state-child-top-reaper{
+        margin-bottom: 34px;
+    }
+    .state-img{
+        width: 343px;
         margin-right: 0px;
     }
 }
